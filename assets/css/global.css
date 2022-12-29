@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+:root {
+    /* Font sizes  */
+    --fontSmall: 0.75rem;
+    --fontMedium: 1.125rem;
+    --fontLarge: 1.5rem;
+    --fontXLarge: 3rem;
+    /* Color */
+    --orange: #FC4C02;
+    --darkGray: #75797A;
+    --lightGray: #B2B2B2
+    /* Spacing */
+    --mainPadding: 140px;
+    /* size */
+    --small: 100px;
+    --medium: 170px;
+    --large: 200px;
+    --xLarge: 220px;
+}
