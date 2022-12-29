@@ -6,38 +6,40 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3px;
+    margin-top: -3%;
 }
 
-.main-carousel {
+.main-container {
     display: flex;
     flex-direction: column;
-    text-align: left;
     padding: 0.5rem;
+}
+
+.main-news-img {
+    cursor: pointer;
 }
 
 .main-news {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 0.5rem;
 }
 
 h1 {
-    display: flex;
     margin-top: 1.25rem;
-    font-size: 1.5rem;
+    font-size: var(--fontLarge);
+    cursor: pointer;
 }
 
 .main-news-text {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: var(--fontMedium)
 }
 
 .font {
     color: var(--lightGray);
-    font-size: 0.75rem;
+    font-size: var(--fontSmall);
 }
 
 .underbar {
@@ -50,7 +52,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
     align-items: center;
     padding: .1rem;
 }
@@ -63,10 +64,15 @@ h1 {
     padding: 1rem 1rem;
 }
 
+.news-img {
+    cursor: pointer;
+}
+
 .secondary-news-title {
     margin-top: 0.5rem;
-    font-size: 1.25rem;
+    font-size: var(--fontMedium);
     font-weight: bold;
+    cursor: pointer;
 }
 
 #main-underbar {
@@ -81,11 +87,11 @@ h1 {
 }
 
 #secondary-underbar {
-    background: linear-gradient(to right, rgb(117,197,207), rgb(102,93,165));
+    background: linear-gradient(to right, rgb(117, 197, 207), rgb(102, 93, 165));
 }
 
 #tertiary-underbar {
-    background: linear-gradient(to right, rgb(117,197,207), rgb(56,179,137));
+    background: linear-gradient(to right, rgb(117, 197, 207), rgb(56, 179, 137));
 }
 
 .footer {
@@ -100,7 +106,7 @@ h1 {
 }
 
 .footer p {
-    font-size: 0.75rem;
+    font-size: var(--fontSmall);
     font-weight: lighter;
 }
 
@@ -110,6 +116,28 @@ h1 {
     text-underline-position: under;
 }
 
-@media only screen and (min-width: 600px) {
-    
+@media only screen and (min-width: 500px) {
+    .main-container {
+        padding: 0.5rem 10%;
+    }
+
+    .news-container {
+        flex-direction: row;
+        align-items: self-end;
+        padding: 5% 10%;
+    }
+
+    .news-img {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    .footer {
+        background-color: #FFF;
+        color: var(--darkGray);
+    }
+
+    .footer p a {
+        color: var(--darkGray);
+    }
 }
