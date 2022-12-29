@@ -34,7 +34,7 @@ h1 {
 .main-news-text {
     margin-bottom: 1rem;
     cursor: pointer;
-    font-size: var(--fontMedium)
+    font-size: 1rem;
 }
 
 .font {
